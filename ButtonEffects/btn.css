@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    height: 100vh;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 60px;
+}
+.btn::before{
+    content: "";
+    background-color: orangered;
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    left: var(--xPos);
+    top: var(--yPos);  
+    /* we will set by js */
+
+    /* here the little box is not at centre so we use translate if we use it it moves in 45 degree direction as trX for X trY for y but translate will have it in both hence along 45 deg */
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    transition: width 0.5s,height 0.5s;
+
+    
+}
+.btn span{
+    position: relative;
+    z-index: 1;
+
+}
+.btn:hover::before{
+    width: 500px;
+    height: 500px;
+}
+.btn{
+    
+    overflow: hidden;
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0,0.6);
+    position: relative;
+}
