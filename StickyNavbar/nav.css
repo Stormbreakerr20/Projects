@@ -16,8 +16,6 @@ body{
     list-style: none;
     display: flex;
     margin: auto 0;
-
-    
 }
 .navbar ul li a{
     text-decoration: none;
@@ -28,8 +26,7 @@ body{
 
 }
 .navbar.active{
-    background-color: black;
-    
+    background-color: black; 
 }
 .navbar.active ul li a,.navbar.active h2{
     color: aliceblue;

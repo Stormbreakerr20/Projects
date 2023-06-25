@@ -6,7 +6,6 @@ body{
     height: 100vh;
 
 }
-
 a{
     text-decoration: none;
     color: black;
@@ -25,14 +24,11 @@ a{
     /* here the little box is not at centre so we use translate if we use it it moves in 45 degree direction as trX for X trY for y but translate will have it in both hence along 45 deg */
     transform: translate(-50%,-50%);
     border-radius: 50%;
-    transition: width 0.5s,height 0.5s;
-
-    
+    transition: width 0.5s,height 0.5s;  
 }
 .btn span{
     position: relative;
     z-index: 1;
-
 }
 .btn:hover::before{
     width: 500px;
