@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    background-color: black;
+    height: 100vh;
+    /* height mention imp  as it was not working */
+
+}
+span{
+    background-image: url('https://stickerly.pstatic.net/sticker_pack/zY6wI1EijD0qHmj8qVabHA/MZK36R/4/-1898859246.png');
+
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+
+    /* after javascript to make heart follow cursor */
+    pointer-events: none;
+    animation: animate 20s linear;
+}
+
+@keyframes animate{
+    0%{
+        transform: translate(-50% ,-50%);
+        opacity: 1;
+
+        /* for color */
+        filter: hue-rotate(0);
+    }
+    100%{
+        transform: translate(-50% ,-5000%);
+        opacity: 0;
+        filter: hue-rotate(720deg);
+    }
+}

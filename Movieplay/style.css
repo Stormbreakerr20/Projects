@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+
+}
+.picbox{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px ;
+    
+}
+.picbox img{
+    width: 70%;
+    height: 70%;
+
+}
+@media (max-width : 600px) {
+    .picbox img{
+        width: 90%;
+        height: 90%;
+    
+    }
+    
+}
+.watch{
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.watch::before{
+    content: "";
+    background-color: orangered;
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    left: var(--xPos);
+    top: var(--yPos);  
+    /* we will set by js */
+
+    /* here the little box is not at centre so we use translate if we use it it moves in 45 degree direction as trX for X trY for y but translate will have it in both hence along 45 deg */
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    transition: width 1s,height 1s;  
+}
+.watch span{
+    position: relative;
+    z-index: 1;
+}
+.watch:hover::before{
+    width: 500px;
+    height: 500px;
+}
+.text{
+    color: white;
+}
+.vid.active{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content:center ;
+    align-items:center ;
+
+    
+
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    height:fit-content + 100px;
+    width: fit-content;
+}
+.vid.active video{
+    
+    max-width: 90%;
+    padding-top: 50px;
+    border: 1px solid white;
+}
+.vid{
+    display: none;
+}
+.cross{
+    position: absolute;
+    top: 0;
+    right: 5% ;
+    color: white;
+}

@@ -1,0 +1,77 @@
+.body{
+    margin: 0;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80');
+    background-blend-mode: darken;
+    background-size: cover;
+    
+}
+.main h1{
+    font-size: 50px;
+    color: black;
+}
+.join{
+    font-size: 20px;
+    padding: 10px;
+    background-color: brown;
+}
+.join:hover{
+    filter: brightness(0.7);
+}
+
+.main.active{
+    filter: blur(5px) brightness(0.7);
+}
+.pop{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: aqua;
+    padding: 20px;
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 2px 4px 4px rgb(0, 0, 0);
+
+
+}
+.ipt{
+    display: flex;
+    flex-direction: column;
+
+}
+.inp::placeholder{
+    text-align: center;
+    color: black;
+}
+.inp{
+    margin: 20px 0;
+}
+.click{
+    padding: 10px;
+    background-color: orange;
+    color: black;
+
+}
+.pop.off{
+    visibility: hidden;
+}
+
+.click:hover{
+    filter: brightness(0.7);
+}
+.cross{
+    position: absolute;
+    top: 15%;
+    right: 5%;
+}
+.cross:hover{
+    color: orangered;
+}

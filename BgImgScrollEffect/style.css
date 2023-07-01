@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+}
+.i{
+    width: 100%;
+    height: 80vh;
+    background: url('9162947.jpg');
+    background-attachment: fixed;   
+    /* don't use position */
+    background-size: 120%;
+
+}
+.txt{
+    font-size: 40px;
+}
