@@ -21,6 +21,6 @@ updatet=()=>{
     setTimeout(() => {
         updatet();
     },500);
-    
+
 }
 updatet();
