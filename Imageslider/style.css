@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: bisque;
+}
+.i{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 30px;
+
+}
+.cont{
+    display: flex;
+    transition: transform 1s ease-in-out;
+
+}
+.cont img{
+    width: 400px;
+    height: 300px;
+}
+
+.l{
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: aliceblue;
+}
+.r{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translate(50%,-50%);
+    color: aliceblue;
+}

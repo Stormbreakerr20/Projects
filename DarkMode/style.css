@@ -1,0 +1,29 @@
+body{
+    margin:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: white;
+    transition: background-color 0.5s;
+}
+.b{
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    border-radius:20px ;
+    position: relative;
+    transition: background-color 0.5s;
+}
+.b::before{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: blue;
+    left: 20%;
+    top: 50%;
+    transform: translate(var(--xPos),var(--yPos));
+    transition: transform 0.5s ease-in-out;
+}
