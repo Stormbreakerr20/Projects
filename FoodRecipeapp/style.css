@@ -1,0 +1,164 @@
+body{
+
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/* MOBILE */
+.mobile{
+    height: 600px;
+    width: 400px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    box-shadow: 0 0 5px 2px rgb(0, 0, 0);
+    position: relative;
+}
+/* SEARCH BAR */
+header{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 0;
+    border-radius: 5px;
+    width:100%;
+    position: absolute;
+    top: 0;
+}
+.search{
+    margin-left: 1rem;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 3px;
+    padding:  4px 5px;
+}
+.inp{
+    border-radius: 3px;
+    border: none;
+    padding: 2px 5px;
+}
+
+/* FAV MEALS  */
+.fav-cont{
+    background-color: aquamarine;
+
+    height: 45%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;
+}
+.fav-cont h2{
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 4rem;
+}
+.fav-row ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    width: 400px;
+    overflow:auto ;
+}
+
+.fav-row ul li img{
+    height: 75px;
+    width: 75px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid whitesmoke;
+    margin-bottom: 5px;
+    
+}
+
+.fav-row ul li {
+    display: flex;
+    flex-direction: column;
+    padding:0.5rem;
+    position: relative;
+    
+}
+.cross {
+    position: absolute;
+    right: 5%;
+    opacity: 0;
+}
+.fav-row ul li span {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    width: 75px;
+    height: 65px;
+
+}
+.fav-row ul li:hover .cross {
+    opacity: 1;
+    
+}
+.fav-row ul li:hover span {
+    white-space: normal;
+
+}
+
+
+/* Random Recipe area */
+.big{
+   display: flex;
+   flex-direction: column;
+
+
+   margin: 1rem;
+   border-radius: 5px;
+   background-color: white;
+   max-width: 305px;
+   box-shadow: 0  2px 5px rgb(0, 0, 0);
+   position: relative;
+   
+}
+.food-pic img{
+    width:300px;
+    height: 250px;
+    border: 3px solid gray;
+    border-radius: 5px;
+
+}
+.food-pic{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.random{
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    background-color: aliceblue;
+    padding: 3px;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px rgb(0, 0, 0);
+
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    align-items: center;
+    
+    
+}
+.name span{
+    font-family: cursive;
+}
